@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Attendance System</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Face & Voice Attendance System</h1>
+
+    <video id="video" autoplay playsinline></video>
+    <canvas id="canvas" style="display: none;"></canvas>
+    <input type="text" id="nameInput" placeholder="Enter Name">
+
+    <div class="btn-row">
+      <button onclick="startRecording()">🎤 Start Voice</button>
+      <button onclick="stopRecording()">🛑 Stop Voice</button>
+      <button onclick="register()">✅ Register</button>
+      <button onclick="recognize()">🔍 Recognize</button>
+    </div>
+
+    <p id="status"></p>
+
+    
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
